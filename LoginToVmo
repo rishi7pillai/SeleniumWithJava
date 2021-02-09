@@ -1,0 +1,17 @@
+package com.company;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Main {
+
+    public static void main(String[] args) {
+        WebDriver driver = new FirefoxDriver();
+        driver.get("https://app.vwo.com");
+        driver.findElement(By.id("login-username")).sendKeys("b2138830@trbvn.com");
+        driver.findElement(By.id("login-password")).sendKeys("hacker123");
+        driver.findElement(By.id("js-login-btn")).click();
+
+    }
+}
