@@ -1,0 +1,17 @@
+package com.company;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Main {
+
+    public static void main(String[] args) {
+        WebDriver driver = new FirefoxDriver();
+        driver.get("https://hitbullseye.com");
+        driver.findElement(By.id("username")).sendKeys("1222001346");
+        driver.findElement(By.id("userpassword")).sendKeys("18P00Y43");
+        driver.findElement(By.id("loginbtn")).click();
+
+    }
+}
